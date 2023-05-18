@@ -1,0 +1,234 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&family=Raleway:wght@700&family=Ubuntu:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+ 
+  font-family: "Poppins", sans-serif;
+}
+/* Navbar css */
+.navbar {
+  background: linear-gradient(
+    90deg,
+    rgba(8, 30, 55, 1) 0%,
+    rgba(17, 31, 65, 1) 57%,
+    rgba(4, 25, 29, 1) 100%
+  );
+  height: 70px;
+  display: flex;
+  cursor: pointer;
+}
+
+.nav-logo {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+.nav-logo a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.navText {
+  font-size: 23px;
+  font-weight: 900;
+  background: -webkit-linear-gradient(#eee, #f7f7f8);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.navImg {
+  display: flex;
+  justify-content: center;
+  align-items: start;
+  /* margin-left: 11vw; */
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: auto;
+}
+
+nav ul li,
+nav li {
+  list-style: none;
+  /* padding: 23px; */
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+  background: -webkit-linear-gradient(#eee, #fefefe);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-family: Whyte, sans-serif;
+}
+
+nav ul a li:hover {
+  color: rgb(22, 6, 93);
+  transition-delay: 0.3s;
+  transition-timing-function: ease-in;
+}
+
+nav ul a,
+nav a {
+  text-decoration: none;
+  color: white;
+}
+
+nav .gt {
+  padding-right: 23px;
+}
+
+nav .ct {
+  padding: 23px;
+}
+
+nav .ab {
+  padding: 23px;
+}
+
+nav .dc {
+  display: flex;
+  justify-content: flex-end;
+  /* height: 23px; */
+  /* width: 49vw;
+      margin: 0 -16vw; */
+  /* margin: 0 50px; */
+}
+
+.outDc {
+  display: flex;
+  align-items: center;
+  margin: auto;
+}
+
+nav .menu {
+  display: none;
+  align-items: center;
+  margin: 0 9px;
+  color: white;
+}
+nav .menu i {
+  font-size: 1.5em;
+}
+/* <!-- Responsive Navbar css --> */
+
+.dropdown_menu {
+  display: none;
+  position: fixed;
+  right: 0px;
+  top: 65px;
+  background: wheat;
+  height: 0;
+  width: 220px;
+  background: linear-gradient(
+    90deg,
+    rgba(8, 30, 55, 1) 0%,
+    rgba(17, 31, 65, 1) 57%,
+    rgba(4, 25, 29, 1) 100%
+  );
+
+  overflow: hidden;
+}
+
+.dropdown_menu.open {
+  border: 2px white solid;
+  border-radius: 7px;
+  height: 190px;
+}
+.dropdown_menu .pages {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 0px 15px;
+  margin: 7px 0;
+}
+.dropdown_menu .pages a small {
+  padding: 5px 0;
+  width: 180px;
+}
+.dropdown_menu .pages a {
+  text-decoration: none;
+  font-size: 23px;
+  color: white;
+}
+.dropdown_menu ul {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  margin: 0 15px;
+}
+.dropdown_menu ul a {
+  text-decoration: none;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-self: flex-start;
+  padding: 2px 0;
+}
+.dropdown_menu ul a li {
+  list-style: none;
+  padding: 1px 15px;
+}
+.activeData {
+  border: 3px solid #759ee9;
+  border-radius: 5px;
+}
+
+/* Github link css  */
+
+.github-icon {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 55px;
+    flex-direction: column;
+  }
+  .github-icon h1 {
+    color: red;
+  }
+  .github-icon a i:hover {
+    color: black;
+    transition: 0.2s ease-in-out;
+  }
+
+@media only screen and (max-width: 1000px) {
+  nav ul,
+  .outDc {
+    display: none;
+  }
+  .dropdown_menu {
+    display: block;
+  }
+  .navbar .menu {
+    display: flex;
+  }
+  .navbar .nav-logo {
+    margin: auto;
+    margin-left: 55px;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .navbar .nav-logo {
+    margin-left: 5px;
+  }
+  .github-icon{
+    margin:45px 15px;
+  }
+  .github-icon h1{
+    padding: 15px 0;
+    font-size: 20px;
+  }
+}
